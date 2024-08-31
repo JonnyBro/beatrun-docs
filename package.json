@@ -1,0 +1,116 @@
+{
+	"name": "beatrun-docs",
+	"version": "0.0.0",
+	"private": true,
+	"scripts": {
+		"build": "next build",
+		"dev": "next dev",
+		"start": "next start"
+	},
+	"dependencies": {
+		"fumadocs-core": "13.4.1",
+		"fumadocs-mdx": "9.0.4",
+		"fumadocs-ui": "13.4.1",
+		"next": "^14.2.5",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@types/mdx": "^2.0.13",
+		"@types/node": "22.3.0",
+		"@types/react": "^18.3.3",
+		"@types/react-dom": "^18.3.0",
+		"autoprefixer": "^10.4.20",
+		"eslint": "^9.9.1",
+		"postcss": "^8.4.41",
+		"tailwindcss": "^3.4.10",
+		"typescript": "^5.5.4"
+	},
+	"eslintConfig": {
+		"extends": "eslint:recommended",
+		"env": {
+			"commonjs": true,
+			"es6": true,
+			"es2020": true,
+			"node": true
+		},
+		"globals": {
+			"Atomics": "readonly",
+			"SharedArrayBuffer": "readonly"
+		},
+		"parserOptions": {
+			"ecmaVersion": 2020
+		},
+		"rules": {
+			"arrow-spacing": [
+				"warn",
+				{
+					"before": true,
+					"after": true
+				}
+			],
+			"comma-dangle": [
+				"error",
+				"always-multiline"
+			],
+			"comma-spacing": "error",
+			"comma-style": "error",
+			"dot-location": [
+				"error",
+				"property"
+			],
+			"handle-callback-err": "off",
+			"indent": [
+				"error",
+				"tab",
+				{
+					"SwitchCase": 1
+				}
+			],
+			"keyword-spacing": "error",
+			"max-nested-callbacks": [
+				"error",
+				{
+					"max": 4
+				}
+			],
+			"max-statements-per-line": [
+				"error",
+				{
+					"max": 2
+				}
+			],
+			"no-console": "off",
+			"no-multi-spaces": "error",
+			"no-multiple-empty-lines": [
+				"error",
+				{
+					"max": 2,
+					"maxEOF": 1,
+					"maxBOF": 0
+				}
+			],
+			"no-trailing-spaces": [
+				"error"
+			],
+			"no-var": "error",
+			"object-curly-spacing": [
+				"error",
+				"always"
+			],
+			"prefer-const": "error",
+			"quotes": [
+				"error",
+				"double"
+			],
+			"semi": [
+				"error",
+				"always"
+			],
+			"space-in-parens": "error",
+			"space-infix-ops": "error",
+			"space-unary-ops": "error",
+			"yoda": "error"
+		}
+	}
+}
