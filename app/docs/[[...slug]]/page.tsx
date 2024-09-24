@@ -11,7 +11,7 @@ export default async function Page({ params }: { params: { slug?: string[] } }) 
 	const MDX = page.data.body;
 
 	return (
-		<DocsPage toc={page.data.toc} full={page.data.full} lastUpdate={page.data.lastModified}>
+		<DocsPage toc={page.data.toc} tableOfContent={{ style: "clerk" }} full={page.data.full} lastUpdate={page.data.lastModified} editOnGithub={{ owner: 'JonnyBro', repo: 'beatrun-docs', sha: 'main', path: `content/docs/${page.file.path}` }}>
 			<DocsTitle>{page.data.title}</DocsTitle>
 			<DocsDescription>{page.data.description}</DocsDescription>
 			<DocsBody>
